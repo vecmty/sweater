@@ -53,6 +53,7 @@ public class MainController {
             messages = messageRepo.findAll();
         }
         model.put("messages", messages);
+        model.put("filter", "");
         return "main";
     }
 }
